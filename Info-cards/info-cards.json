@@ -1,0 +1,113 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+  "hideSelection": true,
+  "hideListHeader": true,
+  "rowFormatter": {
+    "elmType": "div",
+    "style": {
+      "display": "flex",
+      "flex-wrap": "wrap",
+      "float": "left",
+      "align-items": "stretch",
+      "margin-right": "10px",
+      "margin-bottom": "5px",
+      "width": "300px",
+      "border-radius": "8px",
+      "height": "180px",
+      "background-color": "transparent"
+    },
+    "children": [
+      {
+        "elmType": "div",
+        "style": {
+          "display": "flex",
+          "flex-wrap": "wrap",
+          "align-items": "stretch",
+          "max-width": "300px",
+          "padding": "10px"
+        },
+        "children": [
+          {
+            "elmType": "img",
+            "style": {
+              "height": "180px",
+              "width": "300px",
+              "position": "absolute",
+              "z-index": "-10",
+              "border-radius": "8px"
+            },
+            "attributes": {
+              "src": "=getThumbnailImage([$Image], 400, 400)"
+            },
+            "children": [
+              {
+                "elmType": "div",
+                "style": {
+                  "flex-grow": "1"
+                },
+                "children": [
+                  {
+                    "elmType": "span",
+                    "txtContent": "[$Title]",
+                    "style": {
+                      "display": "block",
+                      "border-bottom": "3px solid #FCB616",
+                      "padding": "25px 0 10px 0px",
+                      "color": "white",
+                      "margin-left": "25px",
+                      "margin-right": "25px"
+                    },
+                    "attributes": {
+                      "class": "ms-fontSize-l ms-fontWeight-semibold ms-fontColor-neutralPrimary"
+                    }
+                  },
+                  {
+                    "elmType": "div",
+                    "txtContent": "[$Description]",
+                    "style": {
+                      "display": "block",
+                      "padding": "10px 25px 10px 25px",
+                      "color": "white"
+                    },
+                    "attributes": {
+                      "class": "ms-fontSize-m ms-fontWeight-regular ms-fontColor-neutralSecondary"
+                    }
+                  }
+                ]
+              },
+              {
+                "elmType": "div",
+                "style": {
+                  "flex-grow": "1",
+                  "display": "flex",
+                  "flex-direction": "row",
+                  "flex-wrap": "wrap",
+                  "align-items": "flex-end",
+                  "padding": "0 25px 15px 25px"
+                },
+                "children": [
+                  {
+                    "elmType": "a",
+                    "txtContent": "🡺",
+                    "style": {
+                      "display": "bock",
+                      "width": "100%",
+                      "color": "white",
+                      "text-decoration":"none",
+                      "font-size": "18px",
+                      "padding-left": "5px"
+                    },
+                    "attributes": {
+                      "href": "[$Link]",
+                      "target": "_blank"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
