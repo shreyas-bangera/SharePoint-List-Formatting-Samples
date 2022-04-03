@@ -4,7 +4,7 @@ You can use column formatting to customize how fields in SharePoint lists and li
 <br/>
 
 Additional Refrence
-[Microsoft Blog](http://https://docs.microsoft.com/en-us/sharepoint/dev/declarative-customization/column-formatting "Microsoft Blog")
+[Microsoft Blog](https://docs.microsoft.com/en-us/sharepoint/dev/declarative-customization/column-formatting "Microsoft Blog")
 
 <br/>
 
